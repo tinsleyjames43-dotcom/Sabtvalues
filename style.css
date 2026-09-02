@@ -1,0 +1,93 @@
+body {
+    background-color: #0b0b0e;
+    color: #e2e2ec;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #ff4757;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #8c8c9e;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.controls input, .controls select {
+    background: #15151f;
+    border: 1px solid #28283d;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.controls input {
+    width: 320px;
+}
+
+.table-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #111118;
+    border-radius: 12px;
+    overflow-x: auto;
+    border: 1px solid #1f1f2e;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    white-space: nowrap;
+}
+
+th {
+    background: #181824;
+    color: #9393ad;
+    padding: 14px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 14px;
+    border-bottom: 1px solid #1a1a26;
+    font-size: 14px;
+}
+
+/* Demand Text Colors */
+.demand-extreme { color: #ff6b81; font-weight: bold; }
+.demand-high { color: #2ed573; font-weight: bold; }
+.demand-med { color: #ffa502; font-weight: bold; }
+.demand-low { color: #ff4757; font-weight: bold; }
+
+/* Stability Tags */
+.status-rising { background: rgba(46, 213, 115, 0.15); color: #2ed573; padding: 4px 8px; border-radius: 4px; font-size: 12px; }
+.status-stable { background: rgba(52, 152, 219, 0.15); color: #3498db; padding: 4px 8px; border-radius: 4px; font-size: 12px; }
+.status-falling { background: rgba(255, 71, 87, 0.15); color: #ff4757; padding: 4px 8px; border-radius: 4px; font-size: 12px; }
+
+/* Scoring Threshold: >100 is Elite */
+.score-elite {
+    color: #ff4757;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 71, 87, 0.4);
+}
+.score-normal {
+    color: #8c95a1;
+}
