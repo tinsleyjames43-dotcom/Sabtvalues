@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAB Values | Top 200 Steal a Brainrot Value List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🧠 SAB Values — Top 200 Leaderboard</h1>
+        <p>The Ultimate Steal a Brainrot Value, Demand, and Stability List</p>
+    </header>
+
+    <main>
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search any brainrot..." onkeyup="filterTable()">
+            <select id="rarityFilter" onchange="filterTable()">
+                <option value="ALL">All Rarities</option>
+                <option value="OG">OG</option>
+                <option value="Secret">Secret</option>
+                <option value="Brainrot God">Brainrot God</option>
+                <option value="Mythic">Mythic</option>
+            </select>
+        </div>
+
+        <div class="table-container">
+            <table id="valueTable">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Brainrot Name</th>
+                        <th>Rarity</th>
+                        <th>Trade Value</th>
+                        <th>Demand</th>
+                        <th>Stability</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
